@@ -40,3 +40,16 @@ def list_tasks():
     for i, task in enumerate(tasks, 1):
         status = "Completed" if task["status"] == "completed" else "Pending"
         print(f"{i} {task['description']} (ID: {task['id']}\n) status: {status} | created_at: {task['created_at']}\n  updated_at: {task['updated_at']}\n")
+
+def delete_tasks(task_id):
+    tasks = load_tasks()
+    filtered_tasks = [task for task in tasks if task['id'] != task_id]
+    
+    if len(filtered_tasks) == len(tasks):
+        print("Task not found")
+    else:
+        save_tasks(filtered_tasks)
+        print(f"Taks with ID {task_id} removed.")
+
+def complete_tasks(task_id):
+    
