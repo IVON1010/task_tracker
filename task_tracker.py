@@ -27,3 +27,16 @@ def add_tasks(description):
         "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "Updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }
+    tasks.append(task)
+    save_tasks(tasks)
+    print(f"Task added: {description}")
+
+def list_tasks():
+    tasks = load_tasks()
+    if not tasks:
+        print("No tasks found")
+        return
+    
+    for i, task in enumerate(tasks, 1):
+        status = "Completed" if task["status"] == "completed" else "Pending"
+        print(f"{i} {task['description']} (ID: {task['id']}\n) status: {status} | created_at: {task['created_at']}\n  updated_at: {task['updated_at']}\n")
