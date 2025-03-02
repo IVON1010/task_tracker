@@ -1,8 +1,8 @@
-Task Tracker CLI
+# Task Tracker CLI
 
 A simple command-line task tracker written in Python to manage tasks with statuses such as pending, in progress, and completed.
 
-Features
+## Features
 
 Add tasks with descriptions.
 List all tasks with status and timestamps.
@@ -11,56 +11,61 @@ View only pending, in progress, or completed tasks.
 Update task descriptions and statuses.
 Delete tasks by ID.
 
-Installation
+## Installation
 Clone this repository:
 
+```bash
 git clone https://github.com/IVON1010/task-tracker.git
 cd task-tracker
 Ensure you have Python installed (version 3.x recommended).
+```
 
-Usage
+## Usage
 Run the script with various commands:
 
+```bash
 python task_tracker.py [command] [arguments]
+```
 
-Commands:
-Command	Description
-add "task description"	Adds a new task
+## Commands:
+### Command	Description
 
-list	Lists all tasks
+- **add "task description"**:Adds a new task
 
-delete <task_id>	Deletes a task by ID
+- **list**:Lists all tasks
 
-completed <task_id>	Marks a task as completed
+- **delete**:<task_id>	Deletes a task by ID
 
-mark-in-progress <task_id>	Marks a task as in progress
+- **completed**<task_id>	Marks a task as completed
 
-updated <task_id> "new description" "new status"	Updates a task's description and status
+- **mark-in-progress**:<task_id>	Marks a task as in progress
 
-list-to-do	Shows only pending tasks
+- **updated**:<task_id> "new description" "new status"	Updates a task's description and status
 
-in-progress	Shows only tasks in progress
+- **list-to-do**:Shows only pending tasks
 
-mark-done	Lists completed tasks
+- **in-progress**:Shows only tasks in progress
 
-Example Usage
+- **mark-done**:Lists completed tasks
 
-Adding a task:
+## Example Usage
+
+**Adding a task**:
 python task_tracker.py add "Finish project report"
 
-Listing tasks:
+**Listing tasks**:
 python task_tracker.py list
 
-Marking a task as completed:
+**Marking a task as completed**:
 python task_tracker.py completed <task_id>
 
-Deleting a task:
+**Deleting a task**:
 python task_tracker.py delete <task_id>
 
-Task Storage
+**Task Storage**
 Tasks are stored in tasks.json in JSON format.
 
-License
+## License
 This project is open-source and available under the MIT License.
 
 ⭐ Developed by IVON1010
