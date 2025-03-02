@@ -1,7 +1,8 @@
 # Task Tracker CLI
 
 A simple command-line task tracker written in Python to manage tasks with statuses such as pending, in progress, and completed.
-Project URL: [Task Tracker on GitHub](https://github.com/IVON1010/task_tracker)
+
+#### Project URL: [Task Tracker on GitHub](https://github.com/IVON1010/task_tracker)
 
 ## Features
 
