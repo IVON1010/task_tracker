@@ -2,8 +2,6 @@
 
 A simple command-line task tracker written in Python to manage tasks with statuses such as pending, in progress, and completed.
 
-#### Project URL: [Task Tracker on GitHub](https://github.com/IVON1010/task_tracker)
-
 ## Features
 
 Add tasks with descriptions.
@@ -66,6 +64,8 @@ python task_tracker.py delete <task_id>
 
 **Task Storage**
 Tasks are stored in tasks.json in JSON format.
+
+Project url: https://roadmap.sh/projects/task-tracker
 
 ## License
 This project is open-source and available under the MIT License.
