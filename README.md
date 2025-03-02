@@ -1,4 +1,5 @@
-Task Tracker CLI
+***Task Tracker CLI
+
 A simple command-line task tracker written in Python to manage tasks with statuses such as pending, in progress, and completed.
 
 Features
@@ -32,19 +33,20 @@ updated <task_id> "new description" "new status"	Updates a task's description an
 list-to-do	Shows only pending tasks
 in-progress	Shows only tasks in progress
 mark-done	Lists completed tasks
+
 Example Usage
 Adding a task:
-
 python task_tracker.py add "Finish project report"
+
 Listing tasks:
-
 python task_tracker.py list
+
 Marking a task as completed:
-
 python task_tracker.py completed <task_id>
-Deleting a task:
 
+Deleting a task:
 python task_tracker.py delete <task_id>
+
 Task Storage
 Tasks are stored in tasks.json in JSON format.
 
